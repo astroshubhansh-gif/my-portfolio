@@ -21,6 +21,17 @@
         html { scroll-behavior: smooth; }
         .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); }
         .dark .glass { background: rgba(15, 23, 42, 0.8); }
+
+        /* Animation Styles */
+        .reveal {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s ease-out;
+        }
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
     </style>
 </head>
 <body class="bg-white dark:bg-slate-950 text-slate-900 dark:text-slate-100 font-sans antialiased transition-colors duration-300">
@@ -39,7 +50,7 @@
             <div class="flex items-center space-x-4 md:space-x-8">
                 <div class="hidden md:flex space-x-8 items-center font-bold text-sm uppercase tracking-widest">
                     <a href="#services" class="hover:text-blue-600 transition dark:text-slate-300">Services</a>
-                    <a href="tel:+910000000000" class="text-blue-600">Call Support</a>
+                    <a href="tel:+918544144769" class="text-blue-600">Call Support</a>
                 </div>
 
                 <button id="theme-toggle" class="text-slate-500 dark:text-slate-400 hover:bg-slate-100 dark:hover:bg-slate-800 p-2.5 rounded-lg text-sm transition">
@@ -52,7 +63,7 @@
         </div>
     </nav>
 
-    <header class="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-16 items-center">
+    <header class="max-w-7xl mx-auto px-6 py-24 grid lg:grid-cols-2 gap-16 items-center reveal">
         <div class="space-y-8">
             <div class="inline-block px-4 py-2 bg-blue-50 dark:bg-blue-900/30 text-blue-700 dark:text-blue-400 rounded-full text-xs font-bold uppercase tracking-widest">
                 Next-Gen Home Automation
@@ -65,7 +76,7 @@
             </p>
             <div class="flex flex-col sm:flex-row gap-4">
                 <a href="#contact" class="bg-blue-600 text-white text-center px-10 py-5 rounded-2xl font-black shadow-2xl shadow-blue-200 dark:shadow-blue-900/20 hover:bg-blue-700 transition-all">Start Your Project</a>
-                <a href="tel:+910000000000" class="bg-white dark:bg-slate-900 border-2 border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 text-center px-10 py-5 rounded-2xl font-black hover:bg-slate-50 dark:hover:bg-slate-800 transition-all">Direct Call</a>
+                <a href="tel:+918544144769" class="bg-white dark:bg-slate-900 border-2 border-slate-200 dark:border-slate-800 text-slate-700 dark:text-slate-300 text-center px-10 py-5 rounded-2xl font-black hover:bg-slate-50 dark:hover:bg-slate-800 transition-all">Direct Call</a>
             </div>
         </div>
         <div class="relative">
@@ -82,17 +93,17 @@
 
     <section id="services" class="bg-slate-50 dark:bg-slate-900/50 py-32 transition-colors">
         <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-12">
-            <div class="group p-10 bg-white dark:bg-slate-900 rounded-3xl shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 dark:border-slate-800">
+            <div class="reveal group p-10 bg-white dark:bg-slate-900 rounded-3xl shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 dark:border-slate-800">
                 <div class="text-4xl mb-6 group-hover:scale-110 transition-transform">💡</div>
                 <h3 class="text-2xl font-bold mb-4 dark:text-white">Smart Lighting</h3>
                 <p class="text-slate-500 dark:text-slate-400 leading-relaxed">Automated mood lighting that adjusts with the sun and saves energy.</p>
             </div>
-            <div class="group p-10 bg-white dark:bg-slate-900 rounded-3xl shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 dark:border-slate-800">
+            <div class="reveal group p-10 bg-white dark:bg-slate-900 rounded-3xl shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 dark:border-slate-800" style="transition-delay: 100ms;">
                 <div class="text-4xl mb-6 group-hover:scale-110 transition-transform">🛡️</div>
                 <h3 class="text-2xl font-bold mb-4 dark:text-white">AI Security</h3>
                 <p class="text-slate-500 dark:text-slate-400 leading-relaxed">Face-recognition cameras and smart locks to keep your home impenetrable.</p>
             </div>
-            <div class="group p-10 bg-white dark:bg-slate-900 rounded-3xl shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 dark:border-slate-800">
+            <div class="reveal group p-10 bg-white dark:bg-slate-900 rounded-3xl shadow-sm hover:shadow-2xl transition-all duration-500 border border-slate-100 dark:border-slate-800" style="transition-delay: 200ms;">
                 <div class="text-4xl mb-6 group-hover:scale-110 transition-transform">🌡️</div>
                 <h3 class="text-2xl font-bold mb-4 dark:text-white">Climate Control</h3>
                 <p class="text-slate-500 dark:text-slate-400 leading-relaxed">Intelligent AC and fan control for the perfect temperature, every time.</p>
@@ -100,7 +111,7 @@
         </div>
     </section>
 
-    <section id="contact" class="py-32 max-w-4xl mx-auto px-6">
+    <section id="contact" class="py-32 max-w-4xl mx-auto px-6 reveal">
         <div class="text-center mb-16">
             <h2 class="text-5xl font-black mb-6 dark:text-white">Let's Talk Tech</h2>
             <p class="text-slate-500 dark:text-slate-400 text-lg">Send us your requirements for a custom quotation.</p>
@@ -134,7 +145,7 @@
     <footer class="py-20 bg-slate-900 dark:bg-black text-white text-center">
         <div class="text-2xl font-black mb-4">AU HOME</div>
         <p class="text-slate-500 text-sm tracking-widest uppercase mb-8">Premium Automation Solutions</p>
-	<p class="text-slate-500 text-sm tracking-widest mb-8">Website designed and devloped by SHUBHANSH PANDIT. (Contact: +91 8544144769, email: shubhanshpandit934@gmail.com)</p>
+	    <p class="text-slate-500 text-[10px] md:text-xs tracking-widest mb-8 px-4 opacity-60 italic">Website designed and developed by SHUBHANSH PANDIT. <br class="md:hidden"> (Contact: +91 8544144769, Email: shubhanshpandit934@gmail.com)</p>
 
         <div class="text-xs text-slate-600 font-medium">
             &copy; 2026 AU Home Automation. Built for Performance.
@@ -142,10 +153,10 @@
     </footer>
 
     <script>
+        // --- Theme Logic ---
         var themeToggleDarkIcon = document.getElementById('theme-toggle-dark-icon');
         var themeToggleLightIcon = document.getElementById('theme-toggle-light-icon');
 
-        // Change the icons inside the button based on previous settings
         if (localStorage.getItem('color-theme') === 'dark' || (!('color-theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
             themeToggleLightIcon.classList.remove('hidden');
         } else {
@@ -153,13 +164,9 @@
         }
 
         var themeToggleBtn = document.getElementById('theme-toggle');
-
         themeToggleBtn.addEventListener('click', function() {
-            // Toggle icons inside button
             themeToggleDarkIcon.classList.toggle('hidden');
             themeToggleLightIcon.classList.toggle('hidden');
-
-            // If set via local storage previously
             if (localStorage.getItem('color-theme')) {
                 if (localStorage.getItem('color-theme') === 'light') {
                     document.documentElement.classList.add('dark');
@@ -168,7 +175,6 @@
                     document.documentElement.classList.remove('dark');
                     localStorage.setItem('color-theme', 'light');
                 }
-            // If NOT set via local storage
             } else {
                 if (document.documentElement.classList.contains('dark')) {
                     document.documentElement.classList.remove('dark');
@@ -179,6 +185,21 @@
                 }
             }
         });
+
+        // --- Animation Reveal Logic ---
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
     </script>
 </body>
 </html>
