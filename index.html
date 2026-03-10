@@ -60,12 +60,32 @@
     <section id="contact" class="py-24 max-w-3xl mx-auto px-6 text-center">
         <h2 class="text-4xl font-bold mb-6">Ready to upgrade?</h2>
         <p class="text-lg text-slate-500 mb-10">Send us a message to schedule a free home survey.</p>
-        <form class="space-y-4">
-            <input type="text" placeholder="Your Name" class="w-full p-4 rounded-xl border border-slate-200 focus:outline-blue-600">
-            <input type="email" placeholder="Your Email" class="w-full p-4 rounded-xl border border-slate-200 focus:outline-blue-600">
-            <textarea placeholder="Tell us about your project" rows="4" class="w-full p-4 rounded-xl border border-slate-200 focus:outline-blue-600"></textarea>
-            <button type="submit" class="w-full bg-slate-900 text-white font-bold py-4 rounded-xl hover:bg-slate-800 transition">Send Message</button>
-        </form>
+      <form action="https://formspree.io/f/mqeypabk" method="POST" class="space-y-4">
+    
+    <input type="hidden" name="_next" value="https://auhome.co.in/success.html">
+
+    <div>
+        <label class="block text-left text-sm font-semibold mb-1">Full Name</label>
+        <input type="text" name="name" required placeholder="Enter your name" 
+               class="w-full p-4 rounded-xl border border-slate-200 focus:outline-blue-600">
+    </div>
+
+    <div>
+        <label class="block text-left text-sm font-semibold mb-1">Email Address</label>
+        <input type="email" name="email" required placeholder="email@example.com" 
+               class="w-full p-4 rounded-xl border border-slate-200 focus:outline-blue-600">
+    </div>
+
+    <div>
+        <label class="block text-left text-sm font-semibold mb-1">Project Details</label>
+        <textarea name="message" required placeholder="How can we help automate your home?" rows="4" 
+                  class="w-full p-4 rounded-xl border border-slate-200 focus:outline-blue-600"></textarea>
+    </div>
+
+    <button type="submit" class="w-full bg-slate-900 text-white font-bold py-4 rounded-xl hover:bg-slate-800 transition">
+        Send Message
+    </button>
+</form>
     </section>
 
     <footer class="py-12 border-t border-slate-100 text-center text-slate-400">
