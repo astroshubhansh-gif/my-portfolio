@@ -3,59 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Custom Domain Project</title>
+    <title>AU Home Automation | Smart Living Simplified</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-50 text-slate-900 font-sans antialiased">
+<body class="bg-white text-slate-900 font-sans antialiased">
 
-    <nav class="p-6 flex justify-between items-center max-w-6xl mx-auto">
-        <div class="text-2xl font-bold tracking-tighter">PROJECT_NAME</div>
-        <div class="space-x-6 hidden md:block">
-            <a href="#features" class="hover:text-blue-600 transition">Features</a>
-            <a href="#about" class="hover:text-blue-600 transition">About</a>
-            <a href="mailto:hello@yourdomain.com" class="bg-blue-600 text-white px-5 py-2 rounded-full hover:bg-blue-700 transition">Contact</a>
+    <nav class="p-6 flex justify-between items-center max-w-7xl mx-auto border-b border-slate-100">
+        <div class="flex items-center gap-2">
+            <div class="w-10 h-10 bg-blue-600 rounded flex items-center justify-center text-white font-bold text-xl">AU</div>
+            <span class="text-2xl font-bold tracking-tight">Home Automation</span>
+        </div>
+        <div class="space-x-8 hidden md:flex font-medium">
+            <a href="#services" class="hover:text-blue-600 transition">Services</a>
+            <a href="#contact" class="bg-slate-900 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition">Get a Quote</a>
         </div>
     </nav>
 
---------------------------------------------------------------
-<img src="images/yourphoto.jpg">
------------------------------------------------------------
-
-    <header class="max-w-6xl mx-auto px-6 py-20 text-center">
-        <h1 class="text-5xl md:text-7xl font-extrabold mb-6 bg-gradient-to-r from-blue-600 to-indigo-600 bg-clip-text text-transparent">
-            Built from scratch.
-        </h1>
-        <p class="text-xl text-slate-600 mb-10 max-w-2xl mx-auto">
-            You just took control of your domain. This is a clean slate to build exactly what you envisioned. No bloat, just code.
-        </p>
-        <div class="flex flex-col md:flex-row justify-center gap-4">
-            <button class="bg-slate-900 text-white px-8 py-3 rounded-lg font-medium hover:bg-slate-800 transition">Get Started</button>
-            <button class="border border-slate-300 px-8 py-3 rounded-lg font-medium hover:bg-slate-100 transition">Learn More</button>
+    <header class="max-w-7xl mx-auto px-6 py-24 grid md:grid-cols-2 gap-12 items-center">
+        <div>
+            <span class="text-blue-600 font-semibold tracking-wide uppercase text-sm">Innovating Indian Homes</span>
+            <h1 class="text-5xl md:text-6xl font-black leading-tight mt-4 mb-6">
+                Your Home, <br><span class="text-blue-600">Reimagined.</span>
+            </h1>
+            <p class="text-xl text-slate-500 mb-8 leading-relaxed">
+                Control your lighting, security, and climate from anywhere. We bring the future of smart living to auhome.co.in.
+            </p>
+            <div class="flex gap-4">
+                <a href="#contact" class="bg-blue-600 text-white px-8 py-4 rounded-xl font-bold shadow-lg shadow-blue-200 hover:scale-105 transition transform">Consult Now</a>
+            </div>
+        </div>
+        <div class="bg-slate-100 rounded-3xl aspect-video flex items-center justify-center border-2 border-dashed border-slate-300">
+             <p class="text-slate-400 font-medium">Image of Smart Home Dashboard</p>
         </div>
     </header>
 
-    <section id="features" class="bg-white py-20 border-t border-slate-200">
-        <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-3 gap-12">
-            <div class="space-y-4">
-                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center text-blue-600 font-bold text-xl">1</div>
-                <h3 class="text-xl font-bold">Performance</h3>
-                <p class="text-slate-500">Fast load times because you're using lean, custom code.</p>
+    <section id="services" class="bg-slate-50 py-24">
+        <div class="max-w-7xl mx-auto px-6 text-center mb-16">
+            <h2 class="text-4xl font-bold">Our Expertise</h2>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-3 gap-8">
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                <h3 class="text-xl font-bold mb-4">Smart Lighting</h3>
+                <p class="text-slate-500 leading-relaxed">Automated mood lighting and energy-saving schedules at your fingertips.</p>
             </div>
-            <div class="space-y-4">
-                <div class="w-12 h-12 bg-indigo-100 rounded-lg flex items-center justify-center text-indigo-600 font-bold text-xl">2</div>
-                <h3 class="text-xl font-bold">Scalability</h3>
-                <p class="text-slate-500">Easily add frameworks like React or Vue as your project grows.</p>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                <h3 class="text-xl font-bold mb-4">Security Systems</h3>
+                <p class="text-slate-500 leading-relaxed">AI-powered surveillance and smart locks to keep your family safe 24/7.</p>
             </div>
-            <div class="space-y-4">
-                <div class="w-12 h-12 bg-purple-100 rounded-lg flex items-center justify-center text-purple-600 font-bold text-xl">3</div>
-                <h3 class="text-xl font-bold">SEO Friendly</h3>
-                <p class="text-slate-500">Semantic HTML makes it easy for search engines to find you.</p>
+            <div class="bg-white p-8 rounded-2xl shadow-sm border border-slate-100">
+                <h3 class="text-xl font-bold mb-4">Climate Control</h3>
+                <p class="text-slate-500 leading-relaxed">Intelligent temperature management for maximum comfort and efficiency.</p>
             </div>
         </div>
     </section>
 
-    <footer class="py-10 text-center text-slate-400 text-sm border-t border-slate-100">
-        &copy; 2026 Your Name. All rights reserved.
+    <section id="contact" class="py-24 max-w-3xl mx-auto px-6 text-center">
+        <h2 class="text-4xl font-bold mb-6">Ready to upgrade?</h2>
+        <p class="text-lg text-slate-500 mb-10">Send us a message to schedule a free home survey.</p>
+        <form class="space-y-4">
+            <input type="text" placeholder="Your Name" class="w-full p-4 rounded-xl border border-slate-200 focus:outline-blue-600">
+            <input type="email" placeholder="Your Email" class="w-full p-4 rounded-xl border border-slate-200 focus:outline-blue-600">
+            <textarea placeholder="Tell us about your project" rows="4" class="w-full p-4 rounded-xl border border-slate-200 focus:outline-blue-600"></textarea>
+            <button type="submit" class="w-full bg-slate-900 text-white font-bold py-4 rounded-xl hover:bg-slate-800 transition">Send Message</button>
+        </form>
+    </section>
+
+    <footer class="py-12 border-t border-slate-100 text-center text-slate-400">
+        <p>&copy; 2026 AU Home Automation. All rights reserved.</p>
     </footer>
 
 </body>
